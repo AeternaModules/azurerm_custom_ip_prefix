@@ -1,6 +1,6 @@
-variable "custom_ip_prefixs" {
+variable "custom_ip_prefixes" {
   description = <<EOT
-Map of custom_ip_prefixs, attributes below
+Map of custom_ip_prefixes, attributes below
 Required:
     - cidr
     - location
@@ -21,8 +21,8 @@ EOT
     location                      = string
     name                          = string
     resource_group_name           = string
-    commissioning_enabled         = optional(bool, false)
-    internet_advertising_disabled = optional(bool, false)
+    commissioning_enabled         = optional(bool) # Default: false
+    internet_advertising_disabled = optional(bool) # Default: false
     parent_custom_ip_prefix_id    = optional(string)
     roa_validity_end_date         = optional(string)
     tags                          = optional(map(string))

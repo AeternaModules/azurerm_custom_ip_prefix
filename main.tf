@@ -1,5 +1,5 @@
-resource "azurerm_custom_ip_prefix" "custom_ip_prefixs" {
-  for_each = var.custom_ip_prefixs
+resource "azurerm_custom_ip_prefix" "custom_ip_prefixes" {
+  for_each = var.custom_ip_prefixes
 
   cidr                          = each.value.cidr
   location                      = each.value.location
