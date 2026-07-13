@@ -21,8 +21,8 @@ EOT
     location                      = string
     name                          = string
     resource_group_name           = string
-    commissioning_enabled         = optional(bool) # Default: false
-    internet_advertising_disabled = optional(bool) # Default: false
+    commissioning_enabled         = optional(bool)
+    internet_advertising_disabled = optional(bool)
     parent_custom_ip_prefix_id    = optional(string)
     roa_validity_end_date         = optional(string)
     tags                          = optional(map(string))
